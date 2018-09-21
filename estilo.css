@@ -1,5 +1,11 @@
 *{
+    background: rgba(164, 221, 126, 0.185);
     font-family: 'Spirax', cursive;
+}
+
+h2{
+    text-align: center;
+    font-size: 1.25em;
 }
 
 
