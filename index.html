@@ -22,5 +22,17 @@
     <a href="#" class="button6">nuevo</a>
     <a href="#" class="button7">nuevo</a>
     <a href="#" class="button8">nuevo</a>
+
+<script>
+      if('serviceWorker' in navigator){
+        navigator.serviceWorker.register('/sw.js')
+        .then(function(){
+            console.log('Service Worker Registrado !!!')
+        }).catch(function(){
+            console.log('No se registro SW')
+        })
+    }  
+</script>
+
 </body>
 </html>
