@@ -141,14 +141,14 @@
 </div>
 
 <script>
-  if('serviceWorker' in navigator){
-    navigator.serviceWorker.register('/sw.js')
-    .then(function(){
-        console.log('Service Worker Registrado !!!')
-    }).catch(function(){
-        console.log('No se registro SW')
-    })
-}  
+      if('serviceWorker' in navigator){
+        navigator.serviceWorker.register('/sw.js')
+        .then(function(){
+            console.log('Service Worker Registrado !!!')
+        }).catch(function(){
+            console.log('No se registro SW')
+        })
+    }  
 </script>
 
 </html>    
