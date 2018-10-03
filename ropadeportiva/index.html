@@ -141,14 +141,19 @@
 </div>
 
 <script>
-      if('serviceWorker' in navigator){
-        navigator.serviceWorker.register('/sw.js')
-        .then(function(){
-            console.log('Service Worker Registrado !!!')
-        }).catch(function(){
-            console.log('No se registro SW')
-        })
-    }  
+      self.addEventListener('fetch', function(event) {
+  event.respondWith(
+    caches.match(event.request)
+      .then(function(response) {
+        // Cache hit - return response
+        if (response) {
+          return response;
+        }
+        return fetch(event.request);
+      }
+    )
+  );
+});
 </script>
 
 </html>    
