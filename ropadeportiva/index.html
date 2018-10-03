@@ -11,6 +11,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Spirax" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <meta name="theme-color" content="#2196f3">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
@@ -138,6 +139,17 @@
     <p class="copy">isabel de pardo 2653.b.A</p>
     <p class="copy"> tel.11-5719-4796</p>
 </div>
+
+<script>
+  if('serviceWorker' in navigator){
+    navigator.serviceWorker.register('/sw.js')
+    .then(function(){
+        console.log('Service Worker Registrado !!!')
+    }).catch(function(){
+        console.log('No se registro SW')
+    })
+}  
+</script>
 
 </html>    
 </body>    
