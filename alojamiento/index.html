@@ -85,12 +85,8 @@ if ('serviceWorker' in navigator) {
     });     
 }
 
-const urls = ["/", "/img/"]
-self.addEventListener("install", event => {
-    event.waitUntil(caches.open("mi-PWA")
-        .then( cache => cache.addAll(urls) ));
-});
+
 
 </script>
-            </body>
+</body>
 </html>
