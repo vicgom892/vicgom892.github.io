@@ -2,7 +2,7 @@
 //     console.log('Escuchando un fetch')
 // })
 
-var urls = ['/', '/script.js', '/style.cs'];
+//var urls = ['/', '/script.js', '/style.cs'];
 
 self.addEventListener("install", function(event) {
     console.log("The SW is now installed"); 
