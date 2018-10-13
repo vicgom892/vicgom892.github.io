@@ -275,7 +275,7 @@ body{
     position: relative;
 }
 .fondo-titulo{
-    color: rgb(233, 49, 171);
+    color: rgb(63, 38, 55);
     position: absolute;
     top: 30%;
     left: 50%;
@@ -284,7 +284,7 @@ body{
     text-align: center;
 }
 .fondo-txt{
-    color: rgb(235, 29, 156);
+    color: rgb(63, 38, 55);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -315,7 +315,7 @@ footer .contenedor{
 	padding: 14px 0;
 	border-radius: 50%;
 	color: #fff;
-	margin: 0 10px;
+	margin: 0px;
 }
 .sociales .instagram { background: #ff9317; }
 .sociales .facebook { background: #3b5998; }
