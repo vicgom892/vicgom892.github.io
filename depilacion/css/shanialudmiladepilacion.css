@@ -286,7 +286,7 @@ body{
 .fondo-txt{
     color: rgb(63, 38, 55);
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translateX(-50%)translateY(-50%);
     font-size: 15px;
