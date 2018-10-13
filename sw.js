@@ -4,6 +4,7 @@
 
 //var urls = ['/', '/script.js', '/style.cs'];
 
+var urls = ['/'];
 self.addEventListener("install", function(event) {
     console.log("The SW is now installed"); 
     event.waitUntil(caches.open("myAppCache").then(function(cache) {
