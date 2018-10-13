@@ -2,6 +2,11 @@
     background: rgba(0, 0, 0, 0.027);
     font-family: 'Spirax', cursive;
 }
+@font-face {
+    font-family: 'Arvo';
+    font-display: auto;
+    src: local('Arvo'), url(https://fonts.gstatic.com/s/arvo/v9/rC7kKhY-eUDY-ucISTIf5PesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  }
 
 h2{
     text-align: center;
