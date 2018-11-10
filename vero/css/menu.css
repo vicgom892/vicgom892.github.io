@@ -6,7 +6,7 @@
 }
 body{
     font-family: fantasy;
-    background: #3ef1083f
+    background: #6e746e98;
 }
 @font-face {
     font-family: 'Arvo';
@@ -60,6 +60,9 @@ header .btn-menu{
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+.navegacion h1{
+    color: rgb(156, 156, 156);
 }
 .caption-main h1{
     font-size: 95px;
@@ -440,7 +443,10 @@ header .btn-menu{
 /*estilo destinos especiales*/
 
 .especial{
-    background: #f50da0ee;
+    /* background: #f50da0ee; */
+    background: #00c9ff;
+    background: -webkit-linear-gradient(to rigth, #92fe90, #00c9ff);
+    background: linear-gradient(to right, #92fe90, #00c9ff);
     text-align: center;
     color: rgb(5, 0, 0);
 }
