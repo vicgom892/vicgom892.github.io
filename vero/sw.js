@@ -6,23 +6,18 @@ self.addEventListener('install', function(e) {
     caches.open('airhorner').then(function(cache) {
       return cache.addAll([
         '/',
-        '/menu.html',
-        '/galeria.html',
-        '/js',
-        '/css/font-awesome.css',
-        '/css/galeria.css',
-        '/css/menu.css',
-        '/css/menuajustable.css',
-        '/scripts/menu.js',
-        '/img',
-        '/images1',
-        '/fonts'
+        '/index.html',
+        '/index.html?homescreen=1',
+        '/?homescreen=1',
+        '/styles/main.css',
+        '/scripts/main.min.js',
+        '/sounds/airhorn.mp3'
       ]);
     })
   );
  });
  self.addEventListener('fetch', function(event) {
 
-  console.log(event.request.url);
-  
-  });
+console.log(event.request.url);
+
+});
