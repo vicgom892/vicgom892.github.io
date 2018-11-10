@@ -203,6 +203,14 @@ header .btn-menu{
         width: 380px;
         height: 350px;
     }
+    .full-menu .navegacion ul li a{
+        font-size:20px;
+
+    }
+    .full-menu .navegacion .social-items a{
+        font-size:20px;
+
+    }
 
 }
 /* @media screen and (min-width: 230px){
