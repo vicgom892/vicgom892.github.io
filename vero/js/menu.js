@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     $('#btn-menu').click(function(){
         if($('.btn-menu span ').attr('class') == 'fa fa-bars'){
-            $('.btn-menu span ').addClass('fa fa-bars').css({'color':'#fff'});
+            $('.btn-menu span ').addClass('fa fa-bars').css({'color':'#000'});
             $('.full-menu').css({'left':'0'});
 
         }else{

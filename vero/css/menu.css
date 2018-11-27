@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: fantasy;
+    font-family: sans-serif;
     background: #fff;
 }
 @font-face {
@@ -26,7 +26,7 @@ h2{
 
 }
 .main{
-    height: 800px;
+    height: 700px;
     background: #00c9ff;
     background: -webkit-linear-gradient(to rigth, #92fe90, #00c9ff);
     background: linear-gradient(to right, #92fe90, #00c9ff);
@@ -50,6 +50,7 @@ header .wrap{
 header .btn-menu{
     font-size: 30px;
     cursor: pointer;
+    color:#000;
 }
 .seccion1,
 .seccion1 .wrap{
@@ -65,7 +66,7 @@ header .btn-menu{
     color: rgb(156, 156, 156);
 }
 .caption-main h1{
-    font-size: 35px;
+    font-size: 55px;
     font-weight: 800;
     color: #fff;
 }
@@ -73,12 +74,12 @@ header .btn-menu{
     display: block;
     margin: 50px auto 0px;
 
-    width: 200px;
+    width: 150px;
     padding: 15px 0px;
     border: 2px solid  #fff;
     border-radius: 15px;
 
-    font-size: 20px;
+    font-size: 13px;
     color: #fff;
     text-decoration: none; 
 }
@@ -144,11 +145,19 @@ header .btn-menu{
 }
 
 @media screen and (max-width:420px){
-    .menu-text h1,p{
+    .menu-text h1{
+        display: none;
+    }
+    .menu-text p{
         display: none;
     }
     .full-menu .wrap .navegacion{
         margin-left: 25%;
+    }
+    .caption-main h1{
+        font-size: 35px;
+        font-weight: 800;
+        color: #fff;
     }
 }
 /*responsive*/
@@ -600,7 +609,7 @@ header .btn-menu{
     height: 100px;
 }
 .fondo-titulo{
-    color: rgb(226, 51, 171);
+    color: rgb(12, 1, 8);
     position: absolute;
     top: 30%;
     left: 50%;
@@ -609,7 +618,7 @@ header .btn-menu{
     text-align: center;
 }
 .fondo-txt1{
-    color: rgb(243, 13, 51);
+    color:#000;
     position: absolute;
     top: 95%;
     left: 50%;
@@ -618,16 +627,16 @@ header .btn-menu{
     text-align: center;
 }
 .fondo-txt{
-    color: rgb(243, 13, 51);
+    color:#000;
     position: absolute;
-    top: 75%;
+    top: 80%;
     left: 50%;
     transform: translateX(-50%)translateY(-50%);
-    font-size: 15px;
+    font-size: 12px;
     text-align: center;
 }
 /* estilo de dias y horarios*/
-.tabla {
+/* .tabla {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 90%;
@@ -644,7 +653,7 @@ header .btn-menu{
 
 tr:nth-child(even) {
     background-color: #eb0b95;
-}
+} */
 /*estilos del footer*/
 footer .contenedor{
     display: flex;
