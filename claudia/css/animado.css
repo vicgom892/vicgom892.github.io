@@ -217,7 +217,7 @@
   .contenedor{
     display: flex;
     flex-wrap: wrap;
-    background-image: url(/img/bg.png);
+    background-image: url(/claudia/img/bg.png);
     background-attachment: fixed;
     /* justify-content: space-between;
     flex-direction: row-reverse;
