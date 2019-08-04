@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-image: url(/img/banner-1.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    font-family: 'roboto';
+    color: #fff;
+}
+.img{
+    border-radius: 50%;
+}
+
+.header{
+    max-width: 100%;
+    height: 100vh;
+    margin-top: 0px;
+    background-image: url(/img/img-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.header h1,h2,h3{
+    font-size:50px; 
+    color: rgb(19, 19, 18);
+    text-shadow: 3px 3px 3px rgb(253, 248, 248);
+    font-family: 'Cinzel Decorative';
+}
+.header h1{
+    font-size: 70px;
+}
+.galeria h1{
+    font-size:50px; 
+    color: rgb(19, 19, 18);
+    text-shadow: 3px 3px 3px rgb(253, 248, 248);
+    font-family: 'Cinzel Decorative';
+}
+.galeria{
+    background-image: url(/img/banner-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.team-section-fondo{
+    background-image: url(/img/banner-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.team-section-fondo h2{
+    padding-top: 40px;
+    color:#fff;
+}
+.team-section-fondo .p-responsive{
+    color: #fff;
+}
+
+.nuestro-gym{
+    background-image: url(/img/banner-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.cm-up{
+    
+    position: fixed;
+    background: #001E34;
+    height: 30px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 0px;
+    right: 10px;
+    bottom: 30px;
+}
+.cm-up .cm-text-up{
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    float: left;
+    padding: 0px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    width: 0;
+    transition: 0.4s;
+}
+.cm-up .cm-icon{
+    background: #001E34;
+    color: #00B2FF;
+    font-size: 20px;
+    float: right;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+}
+.cm-up:hover > .cm-text-up{
+    width: 150px;
+    padding: 0 6px;
+}
+.cm-up:hover > .cm-icon{
+    background: #fff;
+}
+.button{
+    margin-bottom: 50px;
+}
+
+.map-container{
+    overflow:hidden;
+    padding-bottom:0;
+    position:relative;
+    height:0;
+}
+.map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+@media screen and (max-width:800px){
+    .header h1,h2,h3{
+        font-size:30px; 
+        color: rgba(5, 5, 0, 0.89);
+        text-shadow: 4px 4px 3px rgb(248, 250, 248);
+        font-family: 'Montserrat Subrayada', sans-serif;
+    }
+    .header h1{
+        font-size: 50px;
+    }
+}
+.btn-success {
+    background-color:#001E34!important;
+    color: #fff;
+}
+.btn-pink {
+    background-color: #001E34!important;
+    color: #fff;
+}
+.btn-indigo {
+    background-color: #001E34!important;
+    color: #fff;
+}
+.horario{
+    background-image: url(/img/logo-1.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.horario h1{
+    text-align: center;
+    font-size:30px; 
+    color: rgba(8, 8, 0, 0.89);
+    text-shadow: 4px 4px 3px rgb(0, 8, 0);
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+.horario h2{
+    font-size: 30px;
+}
+table{
+    margin: auto;
+}
+table, th, td{
+    color: #000305;
+    border: 1px solid rgb(5, 0, 0);
+    border-collapse: collapse;
+}
+th, td{
+    padding: 10px;
+}
+th{text-align: left;}
