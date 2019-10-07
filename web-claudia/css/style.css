@@ -334,9 +334,9 @@ footer p{
      .enlaces a{
          display: block;
          width: 100%;
-         height: 82px;
-         padding: 20px;
-         margin-top: 10px;
+         height: 60px;
+         padding: 0px;
+         margin-top: 12px;
          text-align: center;
          background: #34495e;
          color: #fff;
