@@ -3,7 +3,7 @@
     padding: 0;
 }
 .contenedor-1{
-    background: url(/images/fondo-1.jpg);
+    background: url(/muestras/images/fondo-1.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
