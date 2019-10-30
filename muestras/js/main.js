@@ -31,7 +31,7 @@ function menus(){
 
 function apertura(){
     if(cerrado){
-        menu.style.width = '70vw';
+        menu.style.width = '60vw';
         cerrado = false;
     }else{
         menu.style.width = '0%';
