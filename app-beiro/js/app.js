@@ -1,5 +1,5 @@
 if (navigator.serviceWorker){
-    navigator.serviceWorker.register('/SW.js')
+    navigator.serviceWorker.register('/app-beiro/SW.js')
              .then( reg => {
 
 
