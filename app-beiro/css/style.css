@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.sidebar{
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 120%;
+    background: #042331;
+    transition: all.5s ease;
+    z-index: 999;
+}
+.sidebar header{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: #063146;
+    user-select: none;
+}
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height:65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+}
+.sidebar ul li:hover a{
+    padding-left: 10px;
+}
+.sidebar ul a i {
+    margin-right: 16px;
+}
+
+#check{
+    display:none;
+}
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background: #042331;
+}
+label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white;
+    border-radius: 3px;
+    padding: 6px 12px;
+    transition: all.5s;
+}
+label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: #0a5275;
+    padding: 4px 9px;
+    transition: all.5s;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel{
+    left: 195px;
+}
+#check:checked ~ section{
+    margin-left: 250px;
+}
+/* section{
+    background: url(/app-beiro/img/bg-1.jpg) no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:100% 100%;
+    height: 100vh;
+    transition: all .5s;
+} */
+slider{
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* background-color: #1f1f1f; */
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+slider > *{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #1f1f1f;
+    animation:  slide 18s infinite;
+    z-index: -1;
+}
+slide:nth-child(1){
+    left: 0%;
+    animation-delay: -1s;
+    background-image: url(/app-beiro//img/la-canasta-de-juan.png);
+    background-size:100% 100%;
+    
+}
+slide:nth-child(2){
+    animation-delay: 2s;
+    background-image: url(/app-beiro//img/donuts.png);
+    background-size: 100% 100%;
+    
+}
+slide:nth-child(3){
+    animation-delay: 5s;
+    background-image: url(/app-beiro//img/slide-1-1.jpg);
+    background-size: 100% 100%;
+    
+}
+slide:nth-child(4){
+    animation-delay: 8s;
+    background-image: url(/app-beiro//img/verduleria.jpg);
+    background-size: 100% 100%;   
+}
+slide:nth-child(5){
+    animation-delay: 11s;
+    background-image: url(/app-beiro//img/bg-1.jpg);
+    background-size: 100% 100%;   
+}
+slide:nth-child(6){
+    animation-delay: 14s;
+    background-image: url(/app-beiro//img/bg.jpg);
+    background-size: 100% 100%;   
+}
+@keyframes slide{
+    0%{left: 100%; width: 100%;}
+    5%{left: 0%;}
+    25%{left: 0%;}
+    30%{left: -100%; width: 100%;}
+    30.0001%{left: -100%; width: 0%;}
+    100%{left: 100%; width: 0%;}
+}
+.sidebar .sub-menu{
+    height: 85px;
+}
+.sidebar .sub-menu a{
+    line-height: 15px;
+     margin: 2px;
+     font-size: 10px;
+     padding-left: 15px;
+}
+.menu{
+    height: 80vh;
+}
+.menu-1{
+    display: flex;
+    flex-direction: column;
+    perspective: 200px;
+}
+.sub-menu{
+    display:block;
+    width: 50%;
+    flex-direction: column;
+    position: absolute;
+    background: #023046ee;
+    margin-top: -60px;
+    margin-left: 235px;
+    transform: rotateY(240deg) scale(0);
+    transition: all 1s;
+    box-shadow: 1px 1px 10px 0px rgb(152, 163, 3);
+}
+.sub-menu li a{
+    color: #fff;
+    margin-left: 2px;
+}
+.sub-menu img{
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+}
+.sub-menu li:hover a{
+    color: rgb(227, 243, 4);
+    font-size: 20px;
+    overflow: hidden;
+}
+.menu ul li:hover > ul{
+    transform: rotateY(0deg) scale(1);
+    transform:all 1s ;
+}
+.menu ul li ul::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 8px solid rgb(220, 243, 9);
+    position: absolute;
+    margin-top: 25px;
+    margin-left: -20px;
+    transform: rotate(-90deg);
+}
+.red{
+    position: fixed;
+    top: 300px;
+    z-index: 100;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+/* #facebook,
+#instagram,
+#twitter,
+#whatsapp{
+    padding: 5px 8px;
+} */
+#facebook a{
+    background: #3b5998;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .5s ease;
+    border-radius: 1rem 0 0 0;
+    width: 20px;
+}
+#facebook a:hover{
+    background: #000;
+    padding: 10px 30px;
+}
+#instagram a{
+    background: rgb(255, 145, 0);;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .5s ease;
+    width: 20px;
+}
+#instagram a:hover{
+    background: #000;
+    padding: 10px 30px;
+}
+#twitter a{
+    background: #00abf0;;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .5s ease;
+    width: 20px;
+}
+#twitter a:hover{
+    background: #000;
+    padding: 10px 30px;
+}
+#whatsapp a{
+    background:  green;;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .5s ease;
+    border-radius: 0 0 0 1rem;
+    width: 20px;
+}
+#whatsapp a:hover{
+    background: #000;
+    padding: 10px 30px;
+}
+.copy{
+    position: fixed;
+    width: 100%;
+    bottom:0;
+    margin: auto;
+    background:#0a5275;
+    padding: 5px;
+    z-index: 2000;
+}
+.copy p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.copy p a{
+    color: rgb(227, 243, 4);
+}
+.copy p a:hover{
+    color: rgb(255, 145, 0);
+}
+
+/* .social{
+    position: fixed;
+    left: 0;
+    top: 200px;
+    z-index: 2000;
+}
+.social ul{
+    list-style: none;
+}
+.social ul li a{
+    display: inline-block;
+    color: #fff;
+    background: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: all 500ms ease;
+}
+.social ul li .fa-whatsapp{background: green;}
+.social ul li .fa-instagram{background: rgb(255, 145, 0);}
+.social ul li .fa-facebook-square{background: #3b5998;}
+.social ul li .fa-twitter{background: #00abf0;}
+.social ul li .fa-youtube{background: #ae181f;}
+
+.social ul li a:hover{
+    padding: 10px 30px;
+    background: #000;
+} */
+@media screen and (max-width: 700px) {
+    .red {
+        /* width: 100%; */
+        bottom: 25px;
+        z-index: 100;
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        right: 0;
+    }
+    #facebook,
+    #instagram,
+    #twitter,
+    #whatsapp{
+        padding:0;
+    }
+    #facebook a,
+    #instagram a,
+    #twitter a,
+    #whatsapp a{
+        padding: 5px 8px;
+    }
+    #facebook a:hover,
+    #instagram a:hover,
+    #twitter a:hover,
+    #whatsapp a:hover{
+        padding: 8px 10px;
+    }
+    #facebook a, #whatsapp a{
+        border-radius: 0px;
+    }
+    .menu{
+    top: 0;
+    background: transparent;
+    }
+    .sidebar header {
+        font-size: 22px;
+        color: white;
+        text-align: center;
+        line-height: 70px;
+        background: #0631463d;
+        user-select: none;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .red {
+        width: 100%;
+        z-index: 100;
+        display: flex;
+        flex-direction:column;
+    }
+    /* #facebook a,
+    #instagram a,
+    #twitter a,
+    #whatsapp a{
+        padding: 5px 8px;
+    } */
+    
+    #facebook a, #whatsapp a{
+        border-radius: 0px;
+    }
+    .menu{
+    top: 0;
+    background: transparent;
+    }
+    .sidebar header {
+        font-size: 22px;
+        color: white;
+        text-align: center;
+        line-height: 70px;
+        background: #0631463d;
+        user-select: none;
+    }
+  }
