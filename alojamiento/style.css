@@ -1,0 +1,49 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color:beige;
+}
+
+section{
+    
+    width: 1025;
+    height: 150;
+}
+
+.redes{
+
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    float: left;
+    transition: all 0.4s ease-out;
+    border-radius: 50%;
+}
+
+.redes:hover{
+    cursor: pointer;
+    transform: translateY(-20px);
+    box-shadow: 4px 30px 16px 0px rgba(50, 50, 50, 0.45 );
+}
+
+.redes#facebook{
+    background-color: #2372a3;
+}
+.redes#twitter{
+    background-color: #0084b4;
+}
+.redes#instagram{
+    background-color:#3f729b; 
+}
+.redes#wathsap{
+    background-color: limegreen;
+}
+
+section img{
+    margin-left: 3px;
+    margin-top:5px;
+    text-align: center;
+
+}

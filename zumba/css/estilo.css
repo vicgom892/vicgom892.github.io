@@ -1,0 +1,408 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(127, 255, 212, 0.185);
+    font-family: cursive;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    z-index: 100;
+}
+
+header .contenedor img{
+    padding: 5px;
+}
+/*este estilo es para todos los contenedores*/
+.contenedor{
+    width: 98%;
+    margin: auto;
+}
+#bienvenidos{
+    text-align: center;
+    background-image: url(/zumba/images/bg3.jpg);
+}
+
+/*este estilo es para todos los section*/
+
+section{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+
+.hola{
+    float: left;
+}
+
+header .contenedor{
+    display: table;
+}
+header label{
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+/*menu*/
+#menu-bar{
+    display: none;
+}
+.menu{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(51,51,51,0.9);
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+.menu a{
+    display: block;
+    color: #fff;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);   
+}
+
+.menu a:hover{
+    background:  rgba(255,255,255, 0.3);
+}
+
+#menu-bar:checked ~ .menu{
+    transform: translateX(0%);
+}
+
+/*acer menu responsivo para movil*/
+@media(min-width:1024px){
+    .menu{
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex
+    }
+    .menu a{
+        border:none;
+    }
+    header label{
+        display: none;
+    }
+}
+
+/*banner*/
+
+#banner{
+    margin-top: 60px;
+    position: relative;
+}
+#banner img{
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+#banner .contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+}
+#banner h2{
+    font-size: 28px;
+    color: #333;
+}
+#banner a{
+    display: block;
+    width: 100px;
+    color: black;
+    text-decoration: none;
+    padding: 7px;
+    margin-top: 10px;
+    border: 3px solid#fff;
+}
+#banner a:hover{
+    background: rgba(51,51,51,0.5);
+    color: #333;
+}
+
+/*esto es para hacer responsivo el banner*/
+@media(min-width:480px){
+    #banner h2{
+        font-size:40px; 
+    }
+    #banner a{
+        margin-top: 25px;
+    }
+}
+
+@media(min-width:768px){
+    #banner{
+        height:auto;
+        overflow:hidden;
+    }
+    #banner img{
+       height: auto;
+       margin-top: -50px; 
+    }
+}
+/*
+@media(min-width:1024px){
+    #banner img{
+       margin-top: -200px; 
+    }
+}*/
+
+/*separador*/
+.con{
+    height: 50px;
+    background-color:chartreuse;
+    background-image: url(/zumba/images/icons8-bailando-48.png);
+}
+.con1{
+    height: 50px;
+    background-color: lime;
+    background-image: url(/zumba/images/icons8-bailando-48.png);
+}
+.con2{
+    height: 40px;
+    background-color:lawngreen;
+    background-image: url(/zumba/images/icons8-bailando-48.png);
+}
+.con3{
+    height: 50px;
+    background-color:greenyellow;
+    background-image: url(/zumba/images/icons8-bailando-48.png);
+}
+.con4{
+    height: 50px;
+    background-color:hotpink;
+    background-image: url(/zumba/images/icons8-bailando-48.png);
+}
+.con5{
+    height: 40px;
+    background-color: deeppink;
+    background-image: url(/zumba/images/icons8-bailando-48.png);
+}
+.con6{
+    height: 50px;
+    background-color:lawngreen;
+    background-image: url(/zumba/images/icons8-bailando-48.png);
+}
+.con7{
+    height: 50px;
+    background-color:fuchsia;
+    background-image: url(/zumba/images/icons8-bailando-48.png);
+}
+/*estilo al audio*/
+.audio{
+    text-align: center;
+    color: #251f1f;
+    margin-left: 20px;
+    position: fixed;
+    width: 30px;
+    height: 30px;
+}
+
+/* estilo id bienvenido*/
+h1, h2, h3{
+    text-align: center;
+}
+
+/*estilo al video*/
+
+
+/*galeria de fotos*/
+
+.contenedor1{
+    background: rgba(51, 51, 51, 0.356);
+    color: #fff;
+    text-align:center; 
+    padding: 20px;
+}
+.contenedor1, .contenedor2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.foto-zumba{
+    margin: 20px;
+}
+
+.foto-zumba img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 7px solid #fff;
+}
+/*responsivo a las fotos */
+@media(min-width:480px){
+    .foto-zumba,
+    .gym{
+        width: 40%;
+    }
+}
+
+@media(min-width:1024px){
+    .foto-zumba, 
+    .gym{
+        width: auto;
+    }
+}
+
+.contenedor2{
+    background-image: url(/zumba/images/bg3.jpg);
+}
+
+
+.gym{
+    margin: 20px;
+}
+.gym img{
+    width: 230px;
+    height: 230px;
+    border: 7px solid#333;
+}
+
+/*DIAS Y HORARIOS*/
+
+.tabla {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: chartreuse;
+}
+
+ td, th {
+    border: 1px solid coral;
+    text-align: left;
+    padding: 8px;
+    font-family: cursive;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+/*responsivo a dias y horaris*/
+@media(min-width:400px){}
+
+/*social*/
+
+footer{
+    background-color: rgba(51, 51, 51, 0.158);
+}
+
+footer .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+footer .copy{
+    text-align: center;
+    color:#333;
+}
+
+.copy{
+    font-size: 20px;
+}
+
+#social{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+#social a{
+    color: #333;
+    text-decoration: none;
+}
+
+#social img{
+    width: 30px;
+    height: 30px;
+}
+
+/*responsivo social*/
+@media(min-width:768px){
+    #social,{
+        width: auto;
+    }
+    footer .contenedor,{
+        justify-content: space-between;
+    }
+}
+
+
+
+/*aliniar los contenedores*/
+
+@media(min-width:1024px){
+    .contenedor{
+        width: 1000px;
+    }
+}
+
+/*ESTILO DE GALERIA*/
+
+#galeriadefotos{
+    background-color:white;
+    border: 7px solid#333;
+    padding-top: 10px
+}
+
+.galery{
+     margin: 50px 50px;
+     
+}
+.galery img{
+    width: 190px;
+    height: 160px;
+    padding: 2px;
+    filter: grayscale(100%);
+    transition: 1s;
+    border: 3px solid#333;
+    border-radius: 10%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.galery img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+.container{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
+/*.im img{
+    border-radius:50%;
+    width: 100px;
+    height: 100px;
+    padding-top: 10px;
+    text-align: center;
+}*/
+#promociones{
+    background-image: url(/zumba/images/logo6.jpg);
+}
+
+
+
+
