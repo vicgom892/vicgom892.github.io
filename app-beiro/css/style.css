@@ -5,7 +5,7 @@
     text-decoration: none;
 }
 body{
-    background: url(/img/images.jpg) no-repeat;
+    background: url(/app-beiro/img/images.jpg) no-repeat;
     background-attachment: fixed;
     background-position:center;
     background-size:100% 100%;
