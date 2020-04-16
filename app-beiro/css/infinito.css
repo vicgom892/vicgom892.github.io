@@ -1,0 +1,114 @@
+ /*slider*/
+ .wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider{
+    width: 1000px;
+    height: 100px;
+    position: relative;
+    background: #042331;
+    box-shadow: 0 10px 20px -10px rgba(0,0,0,0.2);
+    display: flex;
+    overflow: hidden;
+    top: 30%;
+}
+.slide{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    animation: slideshow 8s linear infinite;
+}
+.slide img{
+    height: 100%;
+    padding: 0 20px 0 20px;
+    border-radius: 50%;
+}
+@keyframes slideshow{
+    0%{transform: translateX(0);}
+    100%{transform: translateX(-100%);}
+}
+.slider::before, .slider::after{
+    height: 100px;
+    width: 200px;
+    position: absolute;
+    content: '';
+    background: linear-gradient(to right, white 0%, rgba(255,255,255,0) 100%);
+    z-index: 2;
+}
+.slider::before{
+    left: 0;
+    top: 0;
+}
+.wrapper .slider::after{
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+
+/*titulo*/
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 60vh; */
+    overflow: hidden;
+}
+.sub-titulo{
+    position: fixed;
+    top: 10%;
+}
+/* .titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    overflow: hidden;
+} */
+#text{
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.2em;
+    line-height: 0.9em;
+    letter-spacing: 2px;
+    text-align: center;
+    transform: rotate(-1deg) skew(25deg);
+}
+.text-color{
+    font-size: 1.4em;
+    color: red;
+}
+#text::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 30px;
+    left: -30px;
+    color: rgba(0,0,0,0.3);
+    text-shadow: none;
+    filter:blur(8px);
+    z-index: -1;
+}
+
+
+/*responsive*/
+@media screen and (max-width: 700px){
+    #text{
+        position: relative;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        font-size: 1.1em;
+        line-height: 1em;
+        letter-spacing: 2px;
+        text-align: center;
+        transform: rotate(0deg) skew(25deg);
+    }
+    .sub-titulo{
+        position: fixed;
+        top: 30%;
+    }
+}
