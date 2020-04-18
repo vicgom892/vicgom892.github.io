@@ -376,7 +376,7 @@ slide:nth-child(6){
         user-select: none;
     }
   }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 300px) {
     .red {
         width: 100%;
         z-index: 100;
