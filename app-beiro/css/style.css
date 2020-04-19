@@ -5,7 +5,7 @@
     text-decoration: none;
 }
 body{
-    background: url(/app-beiro/img/images.jpg) no-repeat;
+    background: url(/app-beiro/img/fondo.jpg) no-repeat;
     background-attachment: fixed;
     background-position:center;
     background-size:100% 100%;
@@ -242,10 +242,11 @@ slide:nth-child(6){
 }
 #facebook a:hover{
     background: #000;
+    color: blue;
     padding: 10px 30px;
 }
 #instagram a{
-    background: rgb(255, 145, 0);;
+    background: rgb(255, 145, 0);
     padding: 10px 15px;
     color: #fff;
     text-decoration: none;
@@ -253,6 +254,7 @@ slide:nth-child(6){
     width: 20px;
 }
 #instagram a:hover{
+    color: rgb(255, 145, 0);
     background: #000;
     padding: 10px 30px;
 }
@@ -265,6 +267,7 @@ slide:nth-child(6){
     width: 20px;
 }
 #twitter a:hover{
+    color: #00abf0;;
     background: #000;
     padding: 10px 30px;
 }
@@ -278,6 +281,7 @@ slide:nth-child(6){
     width: 20px;
 }
 #whatsapp a:hover{
+    color: green;;
     background: #000;
     padding: 10px 30px;
 }
