@@ -1531,14 +1531,6 @@
 
   <!-- SCRIPTS -->
   <!-- JQuery -->
-  <script>
-    if('serviceWorker' in navigator){
-    window.addEventListener('load', () =>
-    navigator.serviceWorker.worker.register("SW.js")
-    .then(registration => console.log('Service worker registrado'))
-    .catch(err => 'SW registration failed'));
-}
-  </script>
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="js/popper.min.js"></script>
@@ -1551,7 +1543,7 @@
 
   <script type="text/javascript" src="js/sticky.js"></script>
 
-  <!-- <script src="js/main.js"></script> -->
+  <script src="js/main.js"></script>
 
 </body>
 
