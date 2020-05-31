@@ -1,24 +1,24 @@
 const cacheName = 'pwa-v1';
 const staticAssets = [
     './',
-    './index.html',
-    './style',
-    './style.min.css',
-    './mdb.min.css',
-    './mdb.lite.min.css',
-    './mdb.lite.css',
-    './mdb.css',
-    './la-canasta-de-juan.css',
-    './botstrap.min.css',
-    './botstrap.css',
-    './botstrap.js',
-    './botstrap.min.js',
-    './jquery-3.3.3.min.js',
-    './mdb.js',
-    './mdb.min.js',
-    './menu.js',
-    './popper.min.js',
-    './sticky.js'
+    'index.html',
+    'style',
+    'style.min.css',
+    'mdb.min.css',
+    'mdb.lite.min.css',
+    'mdb.lite.css',
+    'mdb.css',
+    'la-canasta-de-juan.css',
+    'botstrap.min.css',
+    'botstrap.css',
+    'botstrap.js',
+    'botstrap.min.js',
+    'jquery-3.3.3.min.js',
+    'mdb.js',
+    'mdb.min.js',
+    'menu.js',
+    'popper.min.js',
+    'sticky.js'
 ];
 
 self.addEventListener('install', async e => {
