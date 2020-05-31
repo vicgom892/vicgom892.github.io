@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth; 
+}
+body{
+    background-color: #fff;
+}
+h2{
+    font-family: 'Bangers', cursive;
+}
+.uno,
+.dos,
+.tres,
+.cuatro,
+.cinco,
+.seis,
+.ciete,
+.ocho{
+    background-color:#fff;
+}
+.uno{
+    margin-top: 300px;
+}
+/*sticky*/
+
+.logo{
+    width: 100%;
+    height: 300px;
+    background:rgba(253, 253, 252, 0.979);
+    text-align: center;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    transition: all 2.5s ease;
+    z-index: 9;
+}
+.logo h1{
+    font-family: 'Bangers', cursive;
+    padding-top: 25px;
+}
+.logo .txt{
+    padding-top: 0;
+    font-size: 30px;
+}
+/* .logo.img{
+    background-image: url(/header.png);
+    background-position: top;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    left: 20px;
+    top: 0;
+} */
+.logo nav{
+    position: absolute;
+    bottom: 0px;
+    height: 120px;
+    line-height: 60px;
+    width: 100%;
+    background:transparent;
+}
+/* .logo nav img{
+    float: right;
+    padding-right: 30px;
+} */
+/* .logo nav a{
+    color: white;
+    display: inline-block;
+    padding: 10px 15px;
+    line-height: 1px;
+    text-decoration: none;
+    border-radius: 5px;
+} */
+body.sticky-header{
+    padding: 0px;
+}
+body.sticky-header .logo{
+    top: 0;
+    height: 120px;
+    transition:.5s;
+}
+body.sticky-header .logo img{
+    margin-left: 80%;
+    transition:all 2s ease-in-out;
+}
+
+
+
+
+
+
+
+/* .pegajoso{
+    background: darkcyan;
+    padding: .5em;
+    text-align: center;
+    font-size: 2em;
+    width: 100%;
+    position: sticky;
+    top: 20px;
+}
+.pegajoso::after{
+    background-color: darkkhaki;
+} */
+
+/* .pegajoso{
+    position: sticky;
+    top: 2px;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.pegajoso::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #0a2a43);
+    z-index: 10000;
+    mix-blend-mode: color;
+}
+.pegajoso::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.pegajoso img{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    
+    pointer-events: none;
+}
+#text{
+    position: relative;
+    color: #fff;
+    font-size: 2em;
+    top: 30%;
+} */
+/*sticky*/
+.card-img-top {
+    width: 100%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    height: 250px;
+}
+.fa-heart:before {
+    color: red;
+}
+.card.card-cascade.wider .view.view-cascade {
+    z-index: 2;
+}
+.card.card-cascade.wider {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.card.card-cascade.wider .card-body.card-body-cascade {
+    z-index: 1;
+    margin-right: 4%;
+    margin-left: 4%;
+    background: #fff;
+    border-radius: 0 0 .25rem .25rem;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.h1-responsive {
+    font-size: 450%;
+    padding-top: 150px;
+}
+/*menu*/
+.sidebar{
+    top: 0;
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 120%;
+    background: #042331;
+    transition: all.5s ease;
+    z-index: 999;
+}
+.sidebar header{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: #fff;
+    user-select: none;
+}
+.sidebar .mas{
+    background: #042331;
+}
+.sidebar header img{
+    width: 120px;
+    height: 70px;
+
+
+}
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height:45px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+}
+.sidebar ul li:hover a{
+    padding-left: 10px;
+}
+.sidebar ul a i {
+    margin-right: 16px;
+}
+
+#check{
+    display:none;
+}
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background: #042331;
+}
+label #btn{
+    position: fixed;
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: red;
+    border-radius: 3px;
+    padding: 6px 12px;
+    transition: all.5s;
+    z-index: 999;
+}
+label #cancel{
+    position: fixed;
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: red;
+    padding: 4px 9px;
+    transition: all.5s;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel{
+    left: 195px;
+}
+#check:checked ~ section{
+    margin-left: 250px;
+}
+/* section{
+    background: url(/app-beiro/img/bg-1.jpg) no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:100% 100%;
+    height: 100vh;
+    transition: all .5s;
+} */
+/* slider{
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* background-color: #1f1f1f; */
+   /* overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+slider > *{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #1f1f1f;
+    animation:  slide 18s infinite;
+    z-index: -1;
+}
+slide:nth-child(1){
+    left: 0%;
+    animation-delay: -1s;
+    background-image: url(/app-beiro/img/la-canasta-de-juan.png);
+    background-size:100% 100%;
+    
+}
+slide:nth-child(2){
+    animation-delay: 2s;
+    background-image: url(/app-beiro/img/donuts.png);
+    background-size: 100% 100%;
+    
+}
+slide:nth-child(3){
+    animation-delay: 5s;
+    background-image: url(/app-beiro/img/slide-1-1.jpg);
+    background-size: 100% 100%;
+    
+}
+slide:nth-child(4){
+    animation-delay: 8s;
+    background-image: url(/app-beiro/img/verduleria.jpg);
+    background-size: 100% 100%;   
+}
+slide:nth-child(5){
+    animation-delay: 11s;
+    background-image: url(/app-beiro/img/bg-1.jpg);
+    background-size: 100% 100%;   
+}
+slide:nth-child(6){
+    animation-delay: 14s;
+    background-image: url(/app-beiro/img/bg.jpg);
+    background-size: 100% 100%;   
+}
+@keyframes slide{
+    0%{left: 100%; width: 100%;}
+    5%{left: 0%;}
+    25%{left: 0%;}
+    30%{left: -100%; width: 100%;}
+    30.0001%{left: -100%; width: 0%;}
+    100%{left: 100%; width: 0%;}
+} */
+.sidebar .sub-menu{
+    height: 85px;
+}
+.sidebar .sub-menu a{
+    line-height: 15px;
+     margin: 2px;
+     font-size: 10px;
+     padding-left: 15px;
+}
+.menu{
+    height: 80vh;
+}
+.menu-1{
+    display: flex;
+    flex-direction: column;
+    perspective: 200px;
+}
+.sub-menu{
+    display:block;
+    width: 50%;
+    flex-direction: column;
+    position: absolute;
+    background: #023046ee;
+    margin-top: -60px;
+    margin-left: 235px;
+    transform: rotateY(240deg) scale(0);
+    transition: all 1s;
+    box-shadow: 1px 1px 10px 0px rgb(152, 163, 3);
+}
+.sub-menu li a{
+    color: #fff;
+    margin-left: 2px;
+}
+.sub-menu img{
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+}
+.sub-menu li:hover a{
+    color: rgb(227, 243, 4);
+    font-size: 20px;
+    overflow: hidden;
+}
+.menu ul li:hover > ul{
+    transform: rotateY(0deg) scale(1);
+    transform:all 1s ;
+}
+.menu ul li ul::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 8px solid rgb(220, 243, 9);
+    position: absolute;
+    margin-top: 25px;
+    margin-left: -20px;
+    transform: rotate(-90deg);
+}
+.header{
+    overflow: hidden;
+    /* background-color:rgba(255, 255, 255, 0.938); */
+    width: 100%;
+    height:300px;
+}
+/* .header img{
+    width:400px;
+    height: auto;
+} */
+
+@media (max-width: 700px) {
+    .pegajoso img{
+        display: block;
+    }
+    body.sticky-header .logo img{
+        margin-left: 50%;
+        transition:all 2s ease-in-out;
+    }
+    .logo nav{
+        background: #fff;
+    }
+    .logo h1{
+        padding-top:80px;
+        font-size: 30px;
+    }
+    .logo .txt{
+        font-size: 25px;
+    }
+}
