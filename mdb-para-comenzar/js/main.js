@@ -14,7 +14,7 @@
     //     })
     // }
     if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register("/sw.js")
+    navigator.serviceWorker.register("SW.js")
         .then(function(registration) {
     // Worker is registered   
     }).catch(function(error) {
