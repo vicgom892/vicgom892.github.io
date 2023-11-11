@@ -1,0 +1,145 @@
+
+.h1 {
+    width: 350px;
+    margin: auto;
+    padding: 5px;
+    font-size: 4rem;
+    text-align: center;
+    background: #29d9d649;
+    border: 1px solid #29d9d5;
+    /* color: rgb(250, 252, 250); */
+    border-radius: 5px;
+    color: #29d9d5 !important;
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 15px auto;
+}
+.elemento{
+    width: 32%;
+    /* background: #fff; */
+    background: #f1f5f51e;
+    /* float: left;*/
+    margin: 10px auto;
+    margin-bottom: 15px; 
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
+}
+.elemento:hover{
+    background-color: #2c3e5033;
+    color: #06f0ec;
+}
+.elemento p{
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.elemento img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: 1s;
+}
+.elemento img:hover{
+    filter: grayscale(0);
+    transform: scale(.9);
+}
+
+@media screen and ( max-width: 700px){
+    .contenedor{
+        width: 90%;
+        margin: 10px auto;
+    }
+    .elemento{
+        width: 30%;
+        background: #fff;
+        /* float: left;*/
+        margin: 10px auto;
+        margin-bottom: 15px; 
+        box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
+    }
+    .elemento img{
+        height: 200px;
+    }
+}
+/*boton wathsaap*/
+.cm-up{
+    
+    position: fixed;
+    background: rgba(5, 243, 37, 0.959);
+    height: 50px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 0px;
+    right: 15px;
+    bottom: 5%;
+}
+
+.cm-up .cm-text-up{
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    float: left;
+    padding: 0px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 45px;
+    width: 0;
+    transition: 0.4s;
+}
+.cm-up:hover{
+    background-color: #067e2adc
+}
+
+.cm-icon{
+    
+    font-size: 50px;
+    float: right;
+    width: 50px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+}
+
+.cm-up:hover > .cm-text-up{
+    width: 150px;
+    padding: 0 6px;
+}
+.cm-icon .fa{
+    font-size: 30px;
+   padding-top: 25px;
+   color: #f8fafc;
+}
+/*boton wathsaap*/
+
+/*footer*/
+.footer-copy{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;;
+}
+.creado a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: var(--color1);
+}
+.creado a:hover{
+    color: #2c3e50;
+}
+/*footer*/
+.linea{
+    width: 300px;
+    height: 2px;
+    background-color: red;
+    margin: auto;
+}

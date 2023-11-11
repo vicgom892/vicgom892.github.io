@@ -1,0 +1,259 @@
+
+/* :root{
+    font-family: 'Arsenal', sans-serif;
+    font-family: 'Krub', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    } */
+html{
+font-size: 62.5%;
+box-sizing: border-box;
+}
+*{
+margin: 0;
+padding: 0;
+font-family: 'Arsenal', sans-serif;
+}
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../vicgom892.github.io/img/body.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+a{
+list-style: none;
+text-decoration: none;
+}
+.header{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 20rem;
+}
+.titulo__span{
+    color: #45f3ff;
+    text-align: center;
+    margin: auto;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+}
+.titulo{
+    text-align: center;
+    margin: auto;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    color: #fff;
+}
+.subtitulo{
+    text-align: center;
+    margin: auto;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    color: #fff;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: auto;
+}
+    
+@media(min-width: 390px ){
+    .contenedor{
+        display: grid;
+        max-width: 120rem;
+        width: 90%;
+        grid-template-columns:1fr;
+        margin: auto;
+    }
+}
+@media(min-width: 768px ){
+    .contenedor{
+        display: grid;
+        max-width: 120rem;
+        width: 90%;
+        grid-template-columns:1fr 1fr;
+        margin: auto;
+    }
+}
+@media(min-width: 912px ){
+    .contenedor{
+        display: grid;
+        max-width: 120rem;
+        width: 90%;
+        grid-template-columns:1fr 1fr 1fr;
+        margin: auto;
+    }
+}
+@property --a{
+syntax: '<angle>';
+inherits: false;
+initial-value: 0deg;
+}
+.box{
+margin: 2rem;
+/* width: 300px; */
+height: 300px;
+background:repeating-conic-gradient(from var(--a),#ff2770 0%,#ff2770 5%,transparent 5%,transparent 40%,#ff2770 50%);
+animation: rotating 2s linear infinite;
+animation-play-state: paused;
+border-radius: 20px;
+filter: drop-shadow(0 15px 50px #000);
+/* display: flex;
+justify-content: center;
+align-items: center; */
+}
+/* .box:nth-child(1){
+filter: drop-shadow(0 15px 50px #000) hue-rotate(225deg);
+} */
+/* .box:nth-child(3){
+filter: drop-shadow(0 15px 50px #000) hue-rotate(310deg);
+} */
+@keyframes rotating{
+0%{
+    --a: 0deg;
+}
+100%{
+    --a: 360deg;
+}
+}
+.box::before{
+content:'';
+position: absolute;
+width: 100%;
+height: 100%;
+background:repeating-conic-gradient(from var(--a),#45f3ff 0%,#45f3ff 5%,transparent 5%,transparent 40%,#45f3ff 50%);
+animation: rotating 2s linear infinite;
+animation-delay: -0.5s;
+animation-play-state: paused;
+border-radius: 20px;
+}
+.box::after{
+content: '';
+position: absolute;
+inset: 6px;
+border: 8px solid#25252b;
+border-radius: 15px;
+background: #2d2d39;
+}
+.box .box__uno{
+    cursor: pointer;
+    position: absolute;
+    inset: 40px;
+    display: flex;
+    justify-content:center;
+    /* align-items: center; */
+    border-radius: 10px;
+    /* background: rgba(0,0,0,0.2); */
+    color: #000;
+    font-family: 'Krub', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    z-index: 10000;
+    box-shadow: inset 0 10px 20px rgba(0,0,0,0.5);
+    border-bottom: 2px solid rgba(255,255,255,015);
+}
+.box h2{
+    text-shadow: 4px 1px 2px rgba(243, 13, 13, 0.6);
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 3rem;
+}
+.box h2:hover{
+color: #fff;
+text-shadow: 4px 1px 2px rgba(13, 14, 1, 0.966);
+}
+.box:hover,
+.box:hover::before{
+    animation-play-state: running;
+}
+.box:nth-child(1) .box__uno{
+    background-image: url(/vicgom892.github.io/victor/img/depilacion.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.box:nth-child(2) .box__uno{
+    background-image: url(/vicgom892.github.io/victor/img/uñas.webp);
+    background-size: cover;
+    background-position: center;
+}
+.box:nth-child(3) .box__uno{
+    background-image: url(/vicgom892.github.io/victor/img/cejas.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.box:nth-child(4) .box__uno{
+    background-image: url(/vicgom892.github.io/victor/img/pestañas.webp);
+    background-size: cover;
+    background-position: center;
+}
+.box:nth-child(5) .box__uno{
+    background-image: url(/vicgom892.github.io/victor/img/pies.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*boton wathsaap*/
+.cm-up{
+    
+    position: fixed;
+    background: #047904da;
+    height: 50px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 0px;
+    right: 10px;
+    bottom: 10px;
+    z-index: 999;
+  }
+  
+  .cm-up .cm-text-up{
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    float: left;
+    padding: 0px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 45px;
+    width: 0;
+    transition: 0.4s;
+  }
+  .cm-up:hover{
+    background-color: #10f009dc;
+  }
+  /* .cm-up-1 .fab:hover{
+    transform: scale(1.05);
+    z-index: 1;
+  } */
+  .cm-icon{
+    
+    font-size: 50px;
+    float: right;
+    width: 50px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+  }
+  
+  .cm-up:hover > .cm-text-up{
+    width: 150px;
+    padding: 0 2px;
+  }
+  .cm-icon .fab{
+    font-size: 35px;
+   padding-top: 10px;
+   color: #f8fafc;
+   z-index: 1;
+  }
+  /*boton wathsaap*/
