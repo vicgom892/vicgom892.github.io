@@ -15,7 +15,7 @@ padding: 0;
 font-family: 'Arsenal', sans-serif;
 }
 body{
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../vicgom892.github.io/img/body.jpeg);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../vicgom892.github.io/victor/img/body.jpeg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -172,27 +172,27 @@ text-shadow: 4px 1px 2px rgba(13, 14, 1, 0.966);
     animation-play-state: running;
 }
 .box:nth-child(1) .box__uno{
-    background-image: url(/vicgom892.github.io/victor/img/depilacion.jpg);
+    background-image: url(../vicgom892.github.io/victor/img/depilacion.jpg);
     background-size: cover;
     background-position: center;
 }
 .box:nth-child(2) .box__uno{
-    background-image: url(/vicgom892.github.io/victor/img/uñas.webp);
+    background-image: url(../vicgom892.github.io/victor/img/uñas.webp);
     background-size: cover;
     background-position: center;
 }
 .box:nth-child(3) .box__uno{
-    background-image: url(/vicgom892.github.io/victor/img/cejas.jpeg);
+    background-image: url(../vicgom892.github.io/victor/img/cejas.jpeg);
     background-size: cover;
     background-position: center;
 }
 .box:nth-child(4) .box__uno{
-    background-image: url(/vicgom892.github.io/victor/img/pestañas.webp);
+    background-image: url(../vicgom892.github.io/victor/img/pestañas.webp);
     background-size: cover;
     background-position: center;
 }
 .box:nth-child(5) .box__uno{
-    background-image: url(/vicgom892.github.io/victor/img/pies.jpg);
+    background-image: url(../vicgom892.github.io/victor/img/pies.jpg);
     background-size: cover;
     background-position: center;
 }
